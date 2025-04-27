@@ -1,0 +1,99 @@
+/* Signup.css */
+
+.signup-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #f0f8ff; /* Light blue background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 255, 0.2);
+    text-align: center;
+  }
+  
+  h2 {
+    color: #004080;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  label {
+    width: 100%;
+    text-align: left;
+    font-weight: bold;
+    color: #003366;
+    margin: 10px 0 5px;
+  }
+  
+  input,
+  select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #80bfff;
+    border-radius: 5px;
+    font-size: 16px;
+    background: #e6f2ff;
+    display: block;
+  }
+  
+  input:focus,
+  select:focus {
+    outline: none;
+    border-color: #004080;
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.3);
+  }
+  
+  button {
+    width: 100%;
+    background: #004080;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  button:hover {
+    background: #002d5f;
+  }
+  
+  .error {
+    color: red;
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  
+  .success {
+    color: green;
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 500px) {
+    .signup-container {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    input,
+    select {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    button {
+      font-size: 16px;
+      padding: 8px;
+    }
+  }
+  

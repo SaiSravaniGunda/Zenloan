@@ -1,0 +1,92 @@
+.loan-status-container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .loading,
+  .no-loans {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .table-responsive {
+    overflow-x: auto;
+  }
+  
+  .loan-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    min-width: 600px;
+  }
+  
+  .loan-table th,
+  .loan-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .loan-table th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .loan-table tr:nth-child(even) {
+    background-color: #f8f9fa;
+  }
+  
+  .loan-table tr:hover {
+    background-color: #e9ecef;
+  }
+  
+  /* Status Styling */
+  .status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .status.pending {
+    background-color: #ffcc00;
+    color: black;
+  }
+  
+  .status.approved {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .status.rejected {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .loan-table th,
+    .loan-table td {
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    .title {
+      font-size: 20px;
+    }
+  }
+  

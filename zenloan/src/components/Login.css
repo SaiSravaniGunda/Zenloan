@@ -1,0 +1,88 @@
+.signin-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+  }
+  
+  .signin-container h2 {
+    color: #fff;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .signin-form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  .input-field::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .input-field:focus {
+    background: rgba(255, 255, 255, 0.3);
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 12px;
+    background: #4caf50;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+  }
+  
+  .submit-button:hover {
+    background: #45a049;
+  }
+  
+  .message {
+    margin-top: 15px;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 400px) {
+    .signin-form {
+      width: 90%;
+    }
+  }
+  
